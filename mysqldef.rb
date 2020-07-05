@@ -1,15 +1,11 @@
 class Mysqldef < Formula
+  version = 'v0.5.20'
   desc 'The easiest idempotent schema management by SQL.'
   homepage 'https://github.com/k0kubun/sqldef'
-  url 'https://github.com/k0kubun/sqldef.git',
-    tag: 'v0.5.20',
-    revision: '28ca2e18783d28717772750cc93fa12da8d16c38'
-  head 'https://github.com/k0kubun/sqldef.git'
-
-  depends_on 'go' => :build
 
   def install
-    system 'make', 'build', 'GOPATH=/tmp/gopath'
-    bin.install Dir.glob('build/*-*/mysqldef').first
+    system 'curl', '-o', 'mysqldef.zip', '-sL', "https://github.com/k0kubun/sqldef/releases/download/#{version}/mysqldef_darwin_amd64.zip"
+    system 'unzip', 'mysqldef.zip'
+    bin.install 'mysqldef'
   end
 end
