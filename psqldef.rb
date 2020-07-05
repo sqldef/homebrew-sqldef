@@ -6,8 +6,10 @@ class Psqldef < Formula
 
   def install
     os = `uname -s`.strip.downcase
-    arch = `uname -m`.strip
-    arch = 'amd64' if arch == 'x86_64'
+    arch = {
+      'x86_64'  => 'amd64',
+      'aarch64' => 'arm64',
+    }.fetch(`uname -m`.strip)
 
     system 'curl', '-o', 'psqldef.zip', '-sL', "https://github.com/k0kubun/sqldef/releases/download/v#{version}/psqldef_#{os}_#{arch}.zip"
     system 'unzip', 'psqldef.zip'
