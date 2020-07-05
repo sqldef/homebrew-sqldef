@@ -9,7 +9,7 @@ Homebrew tap of sqldef
 brew install sqldef/sqldef/mysqldef
 
 # Install psqldef
-brew install sqldef/sqldef/pysqldef
+brew install sqldef/sqldef/psqldef
 ```
 
 ## License
