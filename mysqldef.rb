@@ -9,7 +9,7 @@ class Mysqldef < Formula
   depends_on 'go' => :build
 
   def install
-    system 'make', 'build'
+    system 'make', 'build', 'GOPATH=/tmp/gopath'
     bin.install Dir.glob('build/*-*/mysqldef').first
   end
 end
