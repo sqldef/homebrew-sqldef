@@ -9,6 +9,7 @@ class Psqldef < Formula
     arch = {
       'x86_64'  => 'amd64',
       'aarch64' => 'arm64',
+      'arm64'   => 'arm64',
     }.fetch(`uname -m`.strip)
 
     system 'curl', '-o', 'psqldef.zip', '-sL', "https://github.com/k0kubun/sqldef/releases/download/v#{version}/psqldef_#{os}_#{arch}.zip"

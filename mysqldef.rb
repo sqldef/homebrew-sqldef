@@ -9,6 +9,7 @@ class Mysqldef < Formula
     arch = {
       'x86_64'  => 'amd64',
       'aarch64' => 'arm64',
+      'arm64'   => 'arm64',
     }.fetch(`uname -m`.strip)
 
     system 'curl', '-o', 'mysqldef.zip', '-sL', "https://github.com/k0kubun/sqldef/releases/download/v#{version}/mysqldef_#{os}_#{arch}.zip"
