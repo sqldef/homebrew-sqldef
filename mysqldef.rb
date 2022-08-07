@@ -1,7 +1,7 @@
 class Mysqldef < Formula
   desc 'The easiest idempotent schema management by SQL.'
   homepage 'https://github.com/k0kubun/sqldef'
-  url 'https://github.com/k0kubun/sqldef.git', tag: 'v0.12.8'
+  url 'https://github.com/k0kubun/sqldef.git', tag: 'v0.13.0'
   head 'https://github.com/k0kubun/sqldef.git'
 
   def install
