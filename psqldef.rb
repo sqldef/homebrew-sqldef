@@ -1,7 +1,7 @@
 class Psqldef < Formula
   desc 'The easiest idempotent schema management by SQL.'
   homepage 'https://github.com/k0kubun/sqldef'
-  url 'https://github.com/k0kubun/sqldef.git', tag: 'v0.13.23'
+  url 'https://github.com/k0kubun/sqldef.git', tag: 'v0.14.0'
   head 'https://github.com/k0kubun/sqldef.git'
 
   def install
