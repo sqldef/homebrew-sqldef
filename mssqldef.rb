@@ -1,7 +1,7 @@
 class Mssqldef < Formula
   desc 'The easiest idempotent schema management by SQL.'
   homepage 'https://github.com/k0kubun/sqldef'
-  url 'https://github.com/k0kubun/sqldef.git', tag: 'v0.16.15'
+  url 'https://github.com/k0kubun/sqldef.git', tag: 'v0.17.1'
   head 'https://github.com/k0kubun/sqldef.git'
 
   def install
