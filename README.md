@@ -13,6 +13,9 @@ brew install sqldef/sqldef/psqldef
 
 # Install mssqldef
 brew install sqldef/sqldef/mssqldef
+
+# Install sqlite3def
+brew install sqldef/sqldef/sqlite3def
 ```
 
 ## License
