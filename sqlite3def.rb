@@ -1,7 +1,7 @@
 class Sqlite3def < Formula
   desc 'The easiest idempotent schema management by SQL.'
   homepage 'https://github.com/sqldef/sqldef'
-  url 'https://github.com/sqldef/sqldef.git', tag: 'v0.17.26'
+  url 'https://github.com/sqldef/sqldef.git', tag: 'v0.17.27'
   head 'https://github.com/sqldef/sqldef.git'
 
   def install
