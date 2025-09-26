@@ -1,8 +1,8 @@
 class Mssqldef < Formula
   desc 'The easiest idempotent schema management by SQL.'
-  homepage 'https://github.com/k0kubun/sqldef'
-  url 'https://github.com/k0kubun/sqldef.git', tag: 'v3.0.3'
-  head 'https://github.com/k0kubun/sqldef.git'
+  homepage 'https://github.com/sqldef/sqldef'
+  url 'https://github.com/sqldef/sqldef.git', tag: 'v3.0.3'
+  head 'https://github.com/sqldef/sqldef.git'
 
   def install
     os = `uname -s`.strip.downcase
@@ -12,7 +12,7 @@ class Mssqldef < Formula
       'arm64'   => 'arm64',
     }.fetch(`uname -m`.strip)
 
-    system 'curl', '-o', 'mssqldef.zip', '-sL', "https://github.com/k0kubun/sqldef/releases/download/v#{version}/mssqldef_#{os}_#{arch}.zip"
+    system 'curl', '-o', 'mssqldef.zip', '-sL', "https://github.com/sqldef/sqldef/releases/download/v#{version}/mssqldef_#{os}_#{arch}.zip"
     system 'unzip', 'mssqldef.zip'
     bin.install 'mssqldef'
   end
